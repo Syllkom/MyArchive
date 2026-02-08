@@ -1,0 +1,674 @@
+[
+  {
+    "command": "ai",
+    "usage": "ai ‹texto›",
+    "category": "ai",
+    "type": "legacy",
+    "info": "Interactúa con la inteligencia artificial para responder preguntas o charlar.",
+    "example": "ai ¿Cuál es la capital de Francia?"
+  },
+  {
+    "command": "editimg",
+    "usage": "editimg ‹prompt›",
+    "category": "ai",
+    "type": "legacy",
+    "info": "Edita o genera modificaciones en una imagen basándose en una descripción de texto.",
+    "example": "editimg hacer el fondo de color azul"
+  },
+  {
+    "command": "apk",
+    "usage": "apk ‹app nm›",
+    "category": "downloader",
+    "type": "legacy",
+    "info": "Busca y descarga el archivo APK de una aplicación específica por su nombre.",
+    "example": "apk WhatsApp"
+  },
+  {
+    "command": "apk",
+    "usage": "apk ‹app›",
+    "category": "downloader",
+    "type": "legacy",
+    "info": "Comando alternativo para descargar aplicaciones Android.",
+    "example": "apk Spotify Lite"
+  },
+  {
+    "command": "gid",
+    "usage": "dl ‹social url›",
+    "category": "downloader",
+    "type": "legacy",
+    "info": "Descarga cualquier media de cualquier red social (menos mp3).",
+    "example": "dl https://www.instagram.com/p/Cy8..."
+  },
+  {
+    "command": "github",
+    "usage": "git ‹link›",
+    "category": "downloader",
+    "type": "list",
+    "info": "Descarga el contenido de un repositorio de GitHub mediante su enlace.",
+    "example": "git https://github.com/usuario/repositorio"
+  },
+  {
+    "command": "github",
+    "usage": "git @user",
+    "category": "servicio",
+    "type": "list",
+    "info": "Obtiene información del perfil de un usuario de GitHub.",
+    "example": "git @torvalds"
+  },
+  {
+    "command": "github",
+    "usage": "git ‹search›",
+    "category": "search",
+    "type": "list",
+    "info": "Busca repositorios en GitHub relacionados con un término.",
+    "example": "git bot whatsapp"
+  },
+  {
+    "command": "mf",
+    "usage": "mediafire ‹url›",
+    "category": "downloader",
+    "type": "legacy",
+    "info": "Descarga archivos directamente desde enlaces de MediaFire.",
+    "example": "mediafire https://www.mediafire.com/file/xyz..."
+  },
+  {
+    "command": "spotify",
+    "usage": "spotify ‹link›",
+    "category": "downloader",
+    "type": "legacy",
+    "info": "Descarga canciones de Spotify utilizando el enlace de la pista.",
+    "example": "spotify https://open.spotify.com/track/xyz..."
+  },
+  {
+    "command": "tiktok",
+    "usage": "tiktok ‹link/busqueda›",
+    "category": "downloader",
+    "type": "legacy",
+    "info": "Descarga videos de TikTok sin marca de agua o busca videos.",
+    "example": "tiktok https://vm.tiktok.com/ZSef..."
+  },
+  {
+    "command": "play",
+    "usage": "play ‹text›",
+    "category": "servicio",
+    "type": "list",
+    "info": "Reproduce o descarga música/video buscando por nombre.",
+    "example": "play Linkin Park Numb"
+  },
+  {
+    "command": "play",
+    "usage": "ytmp3 ‹url›",
+    "category": "downloader",
+    "type": "list",
+    "info": "Convierte y descarga un video de YouTube en formato audio MP3.",
+    "example": "ytmp3 https://youtu.be/xyz..."
+  },
+  {
+    "command": "play",
+    "usage": "ytmp4 ‹calidad› ‹url›",
+    "category": "downloader",
+    "type": "list",
+    "info": "Descarga un video de YouTube en formato MP4 con la calidad especificada.",
+    "example": "ytmp4 720p https://youtu.be/xyz..."
+  },
+  {
+    "command": "play",
+    "usage": "yts ‹search›",
+    "category": "search",
+    "type": "list",
+    "info": "Realiza una búsqueda de videos en YouTube y muestra resultados.",
+    "example": "yts Tutorial Javascript"
+  },
+  {
+    "command": "col",
+    "usage": "col [pagina]",
+    "category": "gacha",
+    "type": "legacy",
+    "info": "Muestra tu colección de personajes obtenidos en el gacha.",
+    "example": "col 1"
+  },
+  {
+    "command": "gift",
+    "usage": "gift ‹id/nombre› @usuario",
+    "category": "gacha",
+    "type": "legacy",
+    "info": "Regala un personaje de tu colección a otro usuario.",
+    "example": "gift 24 @miamigo"
+  },
+  {
+    "command": "winfo",
+    "usage": "winfo ‹id›",
+    "category": "gacha",
+    "type": "legacy",
+    "info": "Muestra información detallada sobre un personaje específico por su ID.",
+    "example": "winfo 105"
+  },
+  {
+    "command": "fixgacha",
+    "usage": "fixgacha",
+    "category": "gacha",
+    "type": "legacy",
+    "info": "Intenta reparar errores en el inventario o base de datos del usuario gacha.",
+    "example": "fixgacha"
+  },
+  {
+    "command": "sell",
+    "usage": "sell ‹id› ‹precio›",
+    "category": "gacha",
+    "type": "legacy",
+    "info": "Pone a la venta un personaje de tu colección por un precio determinado.",
+    "example": "sell 55 1000"
+  },
+  {
+    "command": "sell",
+    "usage": "buy ‹id›",
+    "category": "gacha",
+    "type": "legacy",
+    "info": "Compra un personaje que otro usuario haya puesto a la venta.",
+    "example": "buy 55"
+  },
+  {
+    "command": "scrap",
+    "usage": "scrap ‹id›",
+    "category": "gacha",
+    "type": "legacy",
+    "info": "Convierte un personaje repetido o no deseado en materiales o dinero.",
+    "example": "scrap 12"
+  },
+  {
+    "command": "rw",
+    "usage": "rw",
+    "category": "gacha",
+    "type": "legacy",
+    "info": "Roll Waifu: Tira de la ruleta para intentar conseguir un personaje nuevo.",
+    "example": "rw"
+  },
+  {
+    "command": "wsearch",
+    "usage": "wsearch ‹nombre/anime›",
+    "category": "gacha",
+    "type": "legacy",
+    "info": "Busca personajes en la base de datos global del gacha.",
+    "example": "wsearch Naruto"
+  },
+  {
+    "command": "trade",
+    "usage": "trade ‹mi_id› @usuario ‹su_id›",
+    "category": "gacha",
+    "type": "legacy",
+    "info": "Inicia un intercambio de personajes con otro usuario.",
+    "example": "trade 10 @usuario 45"
+  },
+  {
+    "command": "gc",
+    "usage": "gc",
+    "category": "group",
+    "type": "legacy",
+    "info": "Muestra o configura opciones generales del grupo.",
+    "example": "gc"
+  },
+  {
+    "command": "gc",
+    "usage": "setwelcome",
+    "category": "group",
+    "type": "legacy",
+    "info": "Configura el mensaje de bienvenida para nuevos miembros.",
+    "example": "setwelcome"
+  },
+  {
+    "command": "gc",
+    "usage": "setbye",
+    "category": "group",
+    "type": "legacy",
+    "info": "Configura el mensaje de despedida para miembros que salen.",
+    "example": "setbye"
+  },
+  {
+    "command": "kick",
+    "usage": "kick @user",
+    "category": "adm",
+    "type": "legacy",
+    "info": "Expulsa a un usuario mencionado del grupo.",
+    "example": "kick @molesto"
+  },
+  {
+    "command": "kick",
+    "usage": "kick all",
+    "category": "adm",
+    "type": "legacy",
+    "info": "Expulsa a todos los miembros del grupo (requiere permisos altos).",
+    "example": "kick all"
+  },
+  {
+    "command": "setpp",
+    "usage": "setpp [full] (con imagen)",
+    "category": "adm",
+    "type": "legacy",
+    "info": "Cambia la foto de perfil del grupo usando la imagen adjunta o citada.",
+    "example": "setpp full"
+  },
+  {
+    "command": "tag",
+    "usage": "tag ‹citar›",
+    "category": "adm",
+    "type": "legacy",
+    "info": "Etiqueta a todos los miembros citando un mensaje específico.",
+    "example": "tag (respondiendo a un mensaje)"
+  },
+  {
+    "command": "tag",
+    "usage": "tag ‹texto›",
+    "category": "adm",
+    "type": "legacy",
+    "info": "Etiqueta a todos los miembros con un mensaje personalizado.",
+    "example": "tag ¡Atención todos!"
+  },
+  {
+    "command": "tagall",
+    "usage": "tagall ‹texto›",
+    "category": "adm",
+    "type": "legacy",
+    "info": "Menciona a todos los miembros en una lista.",
+    "example": "tagall Reunión ahora"
+  },
+  {
+    "command": "bot",
+    "usage": "bot",
+    "category": "main",
+    "type": "legacy",
+    "info": "Activa o desactiva las funciones del bot en el chat actual.",
+    "example": "bot"
+  },
+  {
+    "command": "creador",
+    "usage": "creador",
+    "category": "main",
+    "type": "legacy",
+    "info": "Muestra la información de contacto del creador del bot.",
+    "example": "creador"
+  },
+  {
+    "command": "info",
+    "usage": "info",
+    "category": "main",
+    "type": "list",
+    "info": "Muestra estadísticas e información técnica sobre el estado del bot.",
+    "example": "info"
+  },
+  {
+    "command": "invite",
+    "usage": "join ‹url›",
+    "category": "main",
+    "type": "legacy",
+    "info": "Hace que el bot se una a un grupo mediante su enlace de invitación.",
+    "example": "join https://chat.whatsapp.com/..."
+  },
+  {
+    "command": "menu",
+    "usage": "menu",
+    "category": "main",
+    "type": "legacy",
+    "info": "Despliega el menú principal con todos los comandos disponibles.",
+    "example": "menu"
+  },
+  {
+    "command": "menu",
+    "usage": "help",
+    "category": "main",
+    "type": "legacy",
+    "info": "Muestra ayuda general sobre el uso del bot.",
+    "example": "help"
+  },
+  {
+    "command": "ping",
+    "usage": "ping",
+    "category": "main",
+    "type": "legacy",
+    "info": "Mide la latencia y velocidad de respuesta del bot.",
+    "example": "ping"
+  },
+  {
+    "command": "report",
+    "usage": "report ‹text›",
+    "category": "main",
+    "type": "legacy",
+    "info": "Envía un reporte de error o problema al desarrollador.",
+    "example": "report El comando sticker no funciona"
+  },
+  {
+    "command": "suggestion",
+    "usage": "sugerir ‹text›",
+    "category": "main",
+    "type": "legacy",
+    "info": "Envía una sugerencia de mejora al desarrollador.",
+    "example": "sugerir Añadir juegos de trivias"
+  },
+  {
+    "command": "backup",
+    "usage": "backup",
+    "category": "owner",
+    "type": "legacy",
+    "info": "Crea una copia de seguridad de la base de datos (Solo Owner).",
+    "example": "backup"
+  },
+  {
+    "command": "bc",
+    "usage": "broadcast",
+    "category": "owner",
+    "type": "legacy",
+    "info": "Envía un mensaje de difusión a todos los chats (Solo Owner).",
+    "example": "broadcast Aviso de mantenimiento"
+  },
+  {
+    "command": "dbcompare",
+    "usage": "dbcompare",
+    "category": "owner",
+    "type": "legacy",
+    "info": "Compara estados de la base de datos para depuración (Solo Owner).",
+    "example": "dbcompare"
+  },
+  {
+    "command": "cleartmp",
+    "usage": "cleartmp",
+    "category": "owner",
+    "type": "legacy",
+    "info": "Limpia archivos temporales del servidor para liberar espacio.",
+    "example": "cleartmp"
+  },
+  {
+    "command": "exportjson",
+    "usage": "exportjson",
+    "category": "owner",
+    "type": "legacy",
+    "info": "Exporta datos actuales en formato JSON.",
+    "example": "exportjson"
+  },
+  {
+    "command": "exportjson",
+    "usage": "genjson",
+    "category": "owner",
+    "type": "legacy",
+    "info": "Genera un archivo JSON específico de la configuración.",
+    "example": "genjson"
+  },
+  {
+    "command": "purgue",
+    "usage": "purgue",
+    "category": "owner",
+    "type": "legacy",
+    "info": "Elimina a todos los integrantes de grupo (excepto admins y root).",
+    "example": "purgue"
+  },
+  {
+    "command": ">",
+    "usage": "> <script>",
+    "category": "owner",
+    "type": "legacy",
+    "info": "Ejecuta código JavaScript arbitrario (Eval) (Solo Owner).",
+    "example": "> return 1+1"
+  },
+  {
+    "command": ">",
+    "usage": "$ <shell>",
+    "category": "owner",
+    "type": "legacy",
+    "info": "Ejecuta comandos de terminal/shell en el servidor (Solo Owner).",
+    "example": "$ ls -la"
+  },
+  {
+    "command": "reg",
+    "usage": "reg",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Registra al usuario en el sistema de economía/RPG del bot.",
+    "example": "reg Syllkom 17"
+  },
+  {
+    "command": "reg",
+    "usage": "perfil",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Muestra el perfil RPG del usuario, nivel, estado, etc.",
+    "example": "perfil"
+  },
+  {
+    "command": "reg",
+    "usage": "lvl",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Muestra el nivel actual y experiencia del usuario y sube de nivel dependiendo de tu exp max.",
+    "example": "lvl"
+  },
+  {
+    "command": "reg",
+    "usage": "setgender",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Establece el género del usuario en su perfil RPG.",
+    "example": "setgender hombre"
+  },
+  {
+    "command": "daily",
+    "usage": "daily",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Reclama la recompensa diaria de monedas/experiencia (+ dias = racha = +recompensas).",
+    "example": "daily"
+  },
+  {
+    "command": "daily",
+    "usage": "work",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Trabaja para ganar monedas en el juego.",
+    "example": "work"
+  },
+  {
+    "command": "daily",
+    "usage": "mine",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Mina recursos para obtener objetos o dinero.",
+    "example": "mine"
+  },
+  {
+    "command": "daily",
+    "usage": "rob @user",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Intenta robar monedas a otro usuario.",
+    "example": "rob @millonario"
+  },
+  {
+    "command": "daily",
+    "usage": "dep <n>",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Deposita dinero en el banco para protegerlo de robos.",
+    "example": "dep 5000"
+  },
+  {
+    "command": "daily",
+    "usage": "bal",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Consulta el balance de dinero en efectivo y en el banco.",
+    "example": "bal"
+  },
+  {
+    "command": "ppt",
+    "usage": "ppt ‹*›",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Juega piedra, papel o tijera contra el bot apostando.",
+    "example": "ppt piedra"
+  },
+  {
+    "command": "ppt",
+    "usage": "slot ‹monto›",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Apuesta dinero en la máquina tragamonedas (slots).",
+    "example": "slot 100"
+  },
+  {
+    "command": "lb",
+    "usage": "top [money/waifus/exp]",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Muestra la tabla de clasificación de usuarios (Ranking).",
+    "example": "top money"
+  },
+  {
+    "command": "michi",
+    "usage": "michi (vs IA)",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Inicia un juego de tres en raya (Gato/Michi) contra la IA.",
+    "example": "michi"
+  },
+  {
+    "command": "michi",
+    "usage": "sala ‹NaN›",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Crea una sala para jugar Michi contra otro usuario.",
+    "example": "sala 1"
+  },
+  {
+    "command": "michi",
+    "usage": "unirse ‹sala›",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Se une a una sala de juego existente.",
+    "example": "unirse 1"
+  },
+  {
+    "command": "couple",
+    "usage": "couple @user",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Propone matrimonio o forma pareja con otro usuario en el RPG.",
+    "example": "couple @crush"
+  },
+  {
+    "command": "couple",
+    "usage": "divorce",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Divorcia o rompe la pareja actual.",
+    "example": "divorce"
+  },
+  {
+    "command": "shop",
+    "usage": "shop",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Abre la tienda principal del juego.",
+    "example": "shop"
+  },
+  {
+    "command": "shop",
+    "usage": "shop list",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Lista todos los ítems disponibles para comprar.",
+    "example": "shop list"
+  },
+  {
+    "command": "shop",
+    "usage": "shop buy ‹item› ‹cant›",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Compra una cantidad específica de un ítem.",
+    "example": "shop buy pocion 5"
+  },
+  {
+    "command": "shop",
+    "usage": "shop sell ‹item› ‹cant›",
+    "category": "RPG",
+    "type": "legacy",
+    "info": "Vende ítems de tu inventario a la tienda.",
+    "example": "shop sell oro 10"
+  },
+  {
+    "command": "lyrics",
+    "usage": "lyrics ‹canción›",
+    "category": "search",
+    "type": "legacy",
+    "info": "Busca y muestra la letra de una canción.",
+    "example": "lyrics Bohemian Rhapsody"
+  },
+  {
+    "command": "pinsearch",
+    "usage": "pinlens (responder a imagen)",
+    "category": "search",
+    "type": "legacy",
+    "info": "Busca imágenes similares en Pinterest/Google Lens.",
+    "example": "pinlens (respondiendo a una imagen)"
+  },
+  {
+    "command": "hd",
+    "usage": "hd (responde a imagen)",
+    "category": "servicio",
+    "type": "legacy",
+    "info": "Mejora la calidad y resolución de una imagen (Upscale).",
+    "example": "hd (respondiendo a una imagen borrosa)"
+  },
+  {
+    "command": "gimage",
+    "usage": "gimage ‹busqueda›",
+    "category": "servicio",
+    "type": "legacy",
+    "info": "Busca imágenes en Google Imágenes.",
+    "example": "gimage gatos graciosos"
+  },
+  {
+    "command": "sms",
+    "usage": "sms ‹n›",
+    "category": "servicio",
+    "type": "legacy",
+    "info": "Envía un mensaje SMS de prueba/spam a un número (si la API lo permite).",
+    "example": "sms 1234567890"
+  },
+  {
+    "command": "sms",
+    "usage": "sms2 ‹n›",
+    "category": "servicio",
+    "type": "legacy",
+    "info": "Método alternativo para envío de SMS.",
+    "example": "sms2 1234567890"
+  },
+  {
+    "command": "sticker",
+    "usage": "sticker (media)",
+    "category": "servicio",
+    "type": "legacy",
+    "info": "Crea un sticker de WhatsApp a partir de una imagen o video.",
+    "example": "sticker (respondiendo a una foto)"
+  },
+  {
+    "command": "sticker",
+    "usage": "qc ‹texto›",
+    "category": "servicio",
+    "type": "legacy",
+    "info": "Crea un sticker con texto simulando un mensaje (Quote Chat).",
+    "example": "qc Hola mundo"
+  },
+  {
+    "command": "sticker",
+    "usage": "setsticker ‹pack›|‹autor›",
+    "category": "servicio",
+    "type": "legacy",
+    "info": "Cambia el nombre del paquete y autor del sticker.",
+    "example": "setsticker MiPack|Yo"
+  },
+  {
+    "command": "whatmusic",
+    "usage": "whatmusic (responde a audio/video)",
+    "category": "servicio",
+    "type": "legacy",
+    "info": "Identifica el nombre de la canción que suena en un audio o video.",
+    "example": "whatmusic (respondiendo a un video/audio max 20 segundos)"
+  }
+]
